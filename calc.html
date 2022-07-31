@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChic Go - Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="calc.css" />
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a  href="index.html">EcoChic GO</a></li>
+        <li><a class = "active" href="calc.html">Calculator</a></li>
+        <li><a href="wardrobe.html">Wardrobe</a></li>
+    </ul>
+    <h1>How EcoChic is your outfit?</h1>
+    <h2>Find the Sustainability Score of Your Favorite Outfit</h2>
+    <div class="choice">        
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Recycled Cotton">Recycled Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Recycled Polyester">Recycled Polyester</option>                  
+            <option value="Nylon">Nylon</option>                    
+            <option value="Recycled Nylon">Recycled Nylon</option>                    
+            <option value="Acrylic">Acrylic</option>                    
+            <option value="Spandex">Spandex</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Hemp">Hemp</option>                    
+            <option value="Tencel">Tencel</option>           
+            <option value="Viscose">Viscose</option>    
+            <option value="Lyocell">Lyocell</option>    
+            <option value="Modal">Modal</option>    
+            <option value="Bamboo">Bamboo</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Alpaca">Alpaca</option> 
+            <option value="Wool">Wool</option> 
+            <option value="Recycled Wool">Recycled Wool</option> 
+            <option value="Cashmere">Cashmere</option> 
+            <option value="Recycled Cashmere">Recycled Cashmere</option>             
+        </select>         
+        <input type="text" id="pct" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice1">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes1" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Recycled Cotton">Recycled Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Recycled Polyester">Recycled Polyester</option>                  
+            <option value="Nylon">Nylon</option>                    
+            <option value="Recycled Nylon">Recycled Nylon</option>                    
+            <option value="Acrylic">Acrylic</option>                    
+            <option value="Spandex">Spandex</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Hemp">Hemp</option>                    
+            <option value="Tencel">Tencel</option>           
+            <option value="Viscose">Viscose</option>    
+            <option value="Lyocell">Lyocell</option>    
+            <option value="Modal">Modal</option>    
+            <option value="Bamboo">Bamboo</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Alpaca">Alpaca</option> 
+            <option value="Wool">Wool</option> 
+            <option value="Recycled Wool">Recycled Wool</option> 
+            <option value="Cashmere">Cashmere</option> 
+            <option value="Recycled Cashmere">Recycled Cashmere</option>                  
+        </select>         
+        <input type="text" id="pct1" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice2">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes2" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Recycled Cotton">Recycled Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Recycled Polyester">Recycled Polyester</option>                  
+            <option value="Nylon">Nylon</option>                    
+            <option value="Recycled Nylon">Recycled Nylon</option>                    
+            <option value="Acrylic">Acrylic</option>                    
+            <option value="Spandex">Spandex</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Hemp">Hemp</option>                    
+            <option value="Tencel">Tencel</option>           
+            <option value="Viscose">Viscose</option>    
+            <option value="Lyocell">Lyocell</option>    
+            <option value="Modal">Modal</option>    
+            <option value="Bamboo">Bamboo</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Alpaca">Alpaca</option> 
+            <option value="Wool">Wool</option> 
+            <option value="Recycled Wool">Recycled Wool</option> 
+            <option value="Cashmere">Cashmere</option> 
+            <option value="Recycled Cashmere">Recycled Cashmere</option>                    
+        </select>         
+        <input type="text" id="pct2" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <div class="choice3">
+        <label for="apparel">Select material:</label>
+        <select name="clothes" id="clothes3" size = "1" style="width:190px;">
+            <option value="Cotton">Cotton</option>
+            <option value="Organic Cotton">Organic Cotton</option>
+            <option value="Recycled Cotton">Recycled Cotton</option>
+            <option value="Polyester">Polyester</option>
+            <option value="Recycled Polyester">Recycled Polyester</option>                  
+            <option value="Nylon">Nylon</option>                    
+            <option value="Recycled Nylon">Recycled Nylon</option>                    
+            <option value="Acrylic">Acrylic</option>                    
+            <option value="Spandex">Spandex</option>                    
+            <option value="Flax">Flax</option>                    
+            <option value="Linen">Linen</option>                    
+            <option value="Hemp">Hemp</option>                    
+            <option value="Tencel">Tencel</option>           
+            <option value="Viscose">Viscose</option>    
+            <option value="Lyocell">Lyocell</option>    
+            <option value="Modal">Modal</option>    
+            <option value="Bamboo">Bamboo</option>    
+            <option value="Silk">Silk</option>    
+            <option value="Alpaca">Alpaca</option> 
+            <option value="Wool">Wool</option> 
+            <option value="Recycled Wool">Recycled Wool</option> 
+            <option value="Cashmere">Cashmere</option> 
+            <option value="Recycled Cashmere">Recycled Cashmere</option>                      
+        </select>         
+        <input type="text" id="pct3" value="Enter Percentage" style="height:25px">  
+        <input type="label" id="pct" value="%" style="height:25px;width:15px"> 
+    </div>
+    <button id = "calc" onclick="calcScores()">Calculate</button>
+    <button id = "add" onclick="add()">Add To Wardrobe</button>
+    <h4>Select Image:</h4>
+    <input id = "pic" type='file' onchange="readURL(this);" accept='image/*' style="color:maroon"/>
+    <img id="blah"/ src = "myshirt.jpg">
+    <h2 id = "result"></h2>
+    <div id="container" style="width: 50%; height: 50%"></div>
+</body>
+<script src="data.js"></script>
+<script src="calc.js"></script>
+	<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "44ea4ae9-4593-4383-b48f-c9a9999b8d1d", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5077f1fd-cfd6-4156-9d5c-7af3b7e00779", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+
+</html>

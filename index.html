@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChic Go - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script
+        src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li><a class = "active" href="index.html">EcoChic Go</a></li>
+        <li><a href="calc.html">Calculator</a></li>
+        <li><a href="wardrobe.html">Wardrobe</a></li>
+    </ul>
+    <h1>EcoChic  Go</h1>
+    <div class="choice">
+        <label for="apparel">Select a category:</label>
+        <select name="clothes" id="clothes" size = "3" style="width:100px;" onchange="updateCategory()">
+            <option value="Dresses">Dresses</option>
+            <option value="Tops">Tops</option>
+            <option value="Pants">Pants</option>                    
+        </select>               
+    </div>
+    <div class="items">
+        <div class="item active" id="0">
+            <a id = "lnk0" target="_blank"
+                href="https://www.gap.com/browse/product.do?pid=801854072&cid=13658&pcid=13658&vid=1&cpos=1&cexp=2713&kcid=CategoryIDs%3D13658&cvar=23383&ctype=Listing&cpid=res22071406944991936415895#pdp-page-content">
+                <img id = "img0" src="https://www.gap.com/webcontent/0029/076/815/cn29076815.jpg">
+            </a>
+        </div>
+        <div class=" item next" id="1">
+            <a id = "lnk1" href="https://bananarepublicfactory.gapfactory.com/browse/product.do?pid=779684#pdp-page-content"
+                target="_blank">
+                <img id = "img1" src="https://bananarepublicfactory.gapfactory.com/webcontent/0028/090/408/cn28090408.jpg">
+            </a>
+        </div>
+        <div class="item" id="2">
+            <a id = "lnk2" target="_blank" href="https://bananarepublic.gap.com/browse/product.do?pid=847043#pdp-page-content">
+                <img id = "img2" src="https://bananarepublic.gap.com/webcontent/0028/658/394/cn28658394.jpg">
+            </a>
+        </div>
+        <div class="item" id="3">
+            <a id = "lnk3" target="_blank"
+                href="https://us.shein.com/Cranes-Print-Belted-Wide-Leg-Jumpsuit-p-520806-cat-1860.html?url_from=adplajumpsuit180627273L_GPM&cid=16915228963&setid=&adid=&pf=GOOGLE&gclid=CjwKCAjw_b6WBhAQEiwAp4HyICta8479xSh91NlrFmzjpr6seeEVQLde7s4NSe4GqoNExrzKf7oqzxoCya4QAvD_BwE">
+                <img id = "img3"
+                    src="https://img.ltwebstatic.com/images2_pi/2018/06/26/15300043221304244622_thumbnail_600x799.webp">
+            </a>
+
+        </div>
+        <div class="item prev" id="4">
+            <a id = "lnk4" target="_blank"
+                href="https://bananarepublicfactory.gapfactory.com/browse/product.do?pid=821446#pdp-page-content">
+                <img id = "img4" src="https://bananarepublicfactory.gapfactory.com/webcontent/0028/865/308/cn28865308.jpg">
+            </a>
+
+        </div>
+        <div class="button-container">
+            <div class="button"><i class="fa fa-angle-left"></i></div>
+            <div class="button"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+    <div class="desc" stle>
+        <h2 id="name"></h2>
+        <h2 id="dress_mat"></h2>
+        <h2 id="dress_mat2"></h2>
+    </div>
+    
+    <div id="container" style="width: 50%; height: 50%"></div>
+    <div class="tooltip">The Outfit's Sustainability Score is:
+        <span class="tooltiptext">The Higg Materials Sustainability Index a sustainability tool for the apparel, footwear, and textiles industry. It Measures 5 Environmental Impacts of Material Production: Global warming, Nutrient pollution (eutrophication), Water scarcity, Fossil Fuel Depletion, Chemistry. Lower Higgs MSI scores are better.</span>
+    </div>
+    <h2 id="result"></h2>
+    <button onclick="add()">Add To Wardrobe</button>
+</body>
+
+    <script src="data.js"></script>
+	<script src="script.js"></script>
+	<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "44ea4ae9-4593-4383-b48f-c9a9999b8d1d", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5077f1fd-cfd6-4156-9d5c-7af3b7e00779", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+</html>
